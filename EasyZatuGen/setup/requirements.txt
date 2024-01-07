@@ -1,0 +1,8 @@
+﻿diffusers==0.24.0
+transformers==4.36.2
+accelerate==0.25.0
+omegaconf==2.3.0
+autoawq==0.1.8
+Pillow==9.3.0
+pyperclip==1.8.2
+tkinterdnd2==0.3.0

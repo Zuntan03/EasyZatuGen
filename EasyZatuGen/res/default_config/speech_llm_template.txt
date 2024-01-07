@@ -1,0 +1,6 @@
+﻿USER:
+次のテーマから類推した状況での長い{main_char}のセリフです。
+THEME:
+{theme}
+ASSISTANT:
+{main_char}「

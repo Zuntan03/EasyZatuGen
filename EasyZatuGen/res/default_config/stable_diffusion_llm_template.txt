@@ -1,0 +1,6 @@
+﻿USER:
+次のテーマから類推した状況での{main_char}の容姿や情景描写を長く詳細に羅列します。
+THEME:
+{theme}
+ASSISTANT:
+Long english description only:

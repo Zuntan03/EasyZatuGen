@@ -1,0 +1,79 @@
+﻿{
+	"enable": true,
+	"prompt_reset_count": 4,
+	"enable_image_prompt_log": false,
+	"enable_translated_image_prompt_log": true,
+	"max_new_tokens": 154,
+	"top_k": 40,
+	"top_p": 0.95,
+	"temperature": 0.8,
+	"repetition_penalty": 1.05,
+	"negative_prompt": "EasyNegative",
+	"negative_prompts": [
+		"",
+		"(worst quality, low quality: 1.4)",
+		"EasyNegative"
+	],
+	"model_name": "real_model_N",
+	"use_lcm": true,
+	"lcm_weight": 1.0,
+	"lora_names": [],
+	"lora_trigger_prompt_max_length": 255,
+	"width": 640,
+	"height": 768,
+	"generate_t_index_list": [
+		0,
+		8,
+		16,
+		24,
+		32,
+		40,
+		45
+	],
+	"upscale_enable": true,
+	"upscale_scale": 2.0,
+	"upscale_disable_lora": false,
+	"upscale_t_index_list": [
+		40,
+		45
+	],
+	"upscale_self_negative": false,
+	"upscale_guidance_scale": 1.0,
+	"upscale_virtual_residual_noise_delta": 0.5,
+	"models": {
+		"real_model_N": {
+			"path": "model\\real_model_N.safetensors",
+			"download_url": "https://huggingface.co/fcski/real_model_L/resolve/main/real_model_N.safetensors",
+			"information_url": "https://huggingface.co/fcski/real_model_L/"
+		}
+	},
+	"loras": {
+		"flat1": {
+			"path": "lora\\flat1.safetensors",
+			"text_encoder_weight": -1.0,
+			"unet_weight": -1.0,
+			"trigger_prompt": "",
+			"original_trigger_prompt": "",
+			"download_url": "https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/release/flat1.safetensors",
+			"information_url": "https://twitter.com/2vXpSwA7/status/1656920989350105088"
+		},
+		"flat2": {
+			"path": "lora\\flat2.safetensors",
+			"text_encoder_weight": -1.0,
+			"unet_weight": -1.0,
+			"trigger_prompt": "",
+			"original_trigger_prompt": "",
+			"download_url": "https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/release/flat2.safetensors",
+			"information_url": "https://twitter.com/2vXpSwA7/status/1656920989350105088"
+		},
+		"flatBG": {
+			"path": "lora\\flatBG.safetensors",
+			"text_encoder_weight": -1.0,
+			"unet_weight": -1.0,
+			"trigger_prompt": "",
+			"original_trigger_prompt": "",
+			"download_url": "https://huggingface.co/2vXpSwA7/iroiro-lora/resolve/main/release/flatBG.safetensors",
+			"information_url": "https://twitter.com/2vXpSwA7/status/1656920989350105088"
+		}
+	}
+}

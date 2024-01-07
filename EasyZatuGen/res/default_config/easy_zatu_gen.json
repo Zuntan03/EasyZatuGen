@@ -1,0 +1,18 @@
+﻿{
+    "lang": "ja",
+    "confirm_nsfw": false,
+    "model_name": "TheBloke/calm2-7B-chat-AWQ",
+    "enable_llm_output_log": true,
+    "enable_perf_log": false,
+    "input": "",
+    "clipboard_linkage": false,
+    "win_width": 800,
+    "win_height": 960,
+    "win_x": 0,
+    "win_y": 0,
+    "input_font_size": 13,
+    "fg": "#CCCCCC",
+    "select_fg": "#FFFFFF",
+    "bg": "#222222",
+    "select_bg": "#555555"
+}
