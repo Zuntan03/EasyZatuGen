@@ -4,7 +4,7 @@
     "model_name": "TheBloke/calm2-7B-chat-AWQ",
     "enable_llm_output_log": true,
     "enable_perf_log": false,
-    "input": "",
+    "input": "バレンタインデーの学校で女学生の｛ひまりちゃん｝がさゆり先輩にチョコレートを渡しながら告白。|(2girls, holding gift box: 1.4)",
     "clipboard_linkage": false,
     "win_width": 800,
     "win_height": 960,
