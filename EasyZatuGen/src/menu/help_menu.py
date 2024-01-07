@@ -23,7 +23,9 @@ class HelpMenu:
 
         self.help_menu.add_command(
             label=l10n["help_how_to_use"],
-            command=lambda: open_url("https://github.com/Zuntan03/EasyZatuGen#how-to-use"),
+            command=lambda: open_url(
+                r"https://github.com/Zuntan03/EasyZatuGen?tab=readme-ov-file#%E4%BD%BF%E3%81%84%E3%81%8B%E3%81%9F"
+            ),
         )
 
         self.help_menu.add_separator()
@@ -36,19 +38,10 @@ class HelpMenu:
             command=lambda: open_url("https://github.com/casper-hansen/AutoAWQ/"),
         )
 
-        reference_menu.add_separator()
-
-        reference_menu.add_command(
-            label="fishaudio/Bert-VITS2",
-            command=lambda: open_url("https://github.com/fishaudio/Bert-VITS2/"),
-        )
-
         reference_menu.add_command(
             label="litagin02/Style-Bert-VITS2",
             command=lambda: open_url("https://github.com/litagin02/Style-Bert-VITS2/"),
         )
-
-        reference_menu.add_separator()
 
         reference_menu.add_command(
             label="cumulo-autumn/StreamDiffusion",
