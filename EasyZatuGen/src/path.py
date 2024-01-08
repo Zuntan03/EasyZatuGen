@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 class Path:
-    path_regex = re.compile(r'[\n<>:"/\\|?* ]')
+    path_regex = re.compile(r'[\n\r<>:"/\\|?* ]')
 
     @classmethod
     def init(cls):
