@@ -155,3 +155,14 @@ class Serializer:
                 sd["upscale_disable_lora"] = stable_diffusion["upscale_disable_lora"]
             if "upscale_self_negative" in stable_diffusion:
                 sd["upscale_self_negative"] = stable_diffusion["upscale_self_negative"]
+            if "loras" in stable_diffusion:
+                for lora_name in stable_diffusion["loras"]:
+                    src_lora = stable_diffusion["loras"][lora_name]
+                    if lora_name in sd["loras"]:
+                        dst_lora = sd["loras"][lora_name]
+                        if "text_encoder_weight" in src_lora:
+                            dst_lora["text_encoder_weight"] = src_lora["text_encoder_weight"]
+                        if "unet_weight" in src_lora:
+                            dst_lora["unet_weight"] = src_lora["unet_weight"]
+                        if "trigger_prompt" in src_lora and src_lora["trigger_prompt"] != "":
+                            dst_lora["trigger_prompt"] = src_lora["trigger_prompt"]

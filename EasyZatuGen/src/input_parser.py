@@ -28,10 +28,13 @@ class InputParser:
             if self.pre_clipboard is None:
                 self.pre_clipboard = pyperclip.paste()
             else:
-                clipboard = pyperclip.paste()
-                if clipboard != self.pre_clipboard:
-                    if self.set_clipboard(clipboard, ctx, self.theme_var, self.prompt_var):
-                        self.pre_clipboard = clipboard
+                try:
+                    clipboard = pyperclip.paste()
+                    if clipboard != self.pre_clipboard:
+                        if self.set_clipboard(clipboard, ctx, self.theme_var, self.prompt_var):
+                            self.pre_clipboard = clipboard
+                except Exception as e:
+                    print(e)
         elif self.pre_clipboard is not None:
             self.pre_clipboard = None
 
