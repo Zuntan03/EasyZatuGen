@@ -4,8 +4,8 @@ pushd %~dp0..\lib
 set PS_CMD=PowerShell -Version 5.1 -ExecutionPolicy Bypass
 set CURL_CMD=C:\Windows\System32\curl.exe
 
-@REM 2024-01-06
-set STYLE_BERT_VITS2_REV=e61ec59580188891072dfaf5e57d1836da146bd8
+@REM 2024-01-15
+set STYLE_BERT_VITS2_REV=972ec0e627976e928428e1902334a2dd591477ea
 
 if not exist Style-Bert-VITS2-%STYLE_BERT_VITS2_REV%\ (
 	%CURL_CMD% -Lo Style-Bert-VITS2.zip https://github.com/litagin02/Style-Bert-VITS2/archive/%STYLE_BERT_VITS2_REV%.zip
@@ -38,16 +38,29 @@ if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 set DOWNLOAD_DST=model_assets
 
-call :DOWNLOAD Ilona Ilona_e314_s48000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Ilona/
+@REM 2024-01-15
+call :DOWNLOAD Hilja Hilja_e300_s26480.safetensors^
+	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Hilja/
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Kaisa Kaisa-slice_e192_s26000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Kaisa/
+call :DOWNLOAD Ilona Ilona_e233_s18000.safetensors^
+	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Ilona-fixed/
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call :DOWNLOAD Kaisa Kaisa_e265_s27000.safetensors^
+	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Kaisa-fixed/
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call :DOWNLOAD Leena Leena_e181_s13000.safetensors^
+	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Leena/
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :DOWNLOAD Liisa Liisa2-g2p_e221_s19000.safetensors^
 	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Liisa-fixed/
+if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+
+call :DOWNLOAD Hilja-nsfw Hilja-nsfw_e300_s3900.safetensors^
+	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Hilja-nsfw/
 if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 call :DOWNLOAD Ilona-nsfw Ilona-nsfw_e400_s7200.safetensors^
