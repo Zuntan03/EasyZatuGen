@@ -20,8 +20,8 @@ echo https://huggingface.co/TheBloke/calm2-7B-chat-AWQ/
 echo.
 echo https://github.com/litagin02/Style-Bert-VITS2/
 echo https://huggingface.co/litagin/style_bert_vits2_jvnv/
-echo https://huggingface.co/litagin/style_bert_vits2_okiba/
-echo https://huggingface.co/litagin/style_bert_vits2_nsfw/
+@REM echo https://huggingface.co/litagin/style_bert_vits2_okiba/
+@REM echo https://huggingface.co/litagin/style_bert_vits2_nsfw/
 echo.
 echo https://github.com/cumulo-autumn/StreamDiffusion/
 echo https://huggingface.co/fcski/real_model_L/

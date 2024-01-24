@@ -98,8 +98,8 @@ Geforce RTX 3060 **VRAM 12GB** 以上を搭載した Widows PC で簡単に動�
 - [cumulo-autumn/StreamDiffusion](https://github.com/cumulo-autumn/StreamDiffusion/)
 - [litagin02/Style-Bert-VITS2](https://github.com/litagin02/Style-Bert-VITS2/)
 - [litagin/style_bert_vits2_jvnv](https://huggingface.co/litagin/style_bert_vits2_jvnv/)
-- [litagin/style_bert_vits2_okiba](https://huggingface.co/litagin/style_bert_vits2_okiba/)
-- [litagin/style_bert_vits2_nsfw](https://huggingface.co/litagin/style_bert_vits2_nsfw/)
+<!-- - [litagin/style_bert_vits2_okiba](https://huggingface.co/litagin/style_bert_vits2_okiba/)
+- [litagin/style_bert_vits2_nsfw](https://huggingface.co/litagin/style_bert_vits2_nsfw/) -->
 
 ## ライセンス
 
