@@ -38,42 +38,42 @@ if %errorlevel% neq 0 ( pause & popd & exit /b %errorlevel% )
 
 set DOWNLOAD_DST=model_assets
 
-@REM 2024-01-15
-call :DOWNLOAD Hilja Hilja_e300_s26480.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Hilja/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM 2024-01-15 2024-01-24 公開停止
+@REM call :DOWNLOAD Hilja Hilja_e300_s26480.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Hilja/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Ilona Ilona_e233_s18000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Ilona-fixed/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Ilona Ilona_e233_s18000.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Ilona-fixed/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Kaisa Kaisa_e265_s27000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Kaisa-fixed/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Kaisa Kaisa_e265_s27000.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Kaisa-fixed/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Leena Leena_e181_s13000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Leena/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Leena Leena_e181_s13000.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Leena/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Liisa Liisa2-g2p_e221_s19000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Liisa-fixed/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Liisa Liisa2-g2p_e221_s19000.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_okiba/resolve/main/model_assets/Liisa-fixed/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Hilja-nsfw Hilja-nsfw_e300_s3900.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Hilja-nsfw/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Hilja-nsfw Hilja-nsfw_e300_s3900.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Hilja-nsfw/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Ilona-nsfw Ilona-nsfw_e400_s7200.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Ilona-nsfw/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Ilona-nsfw Ilona-nsfw_e400_s7200.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Ilona-nsfw/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Kaisa-nsfw Kaisa-nsfw_e189_s13000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Kaisa-nsfw/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Kaisa-nsfw Kaisa-nsfw_e189_s13000.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Kaisa-nsfw/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
-call :DOWNLOAD Liisa-nsfw Liisa-nsfw_e219_s14000.safetensors^
-	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Liisa-nsfw/
-if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
+@REM call :DOWNLOAD Liisa-nsfw Liisa-nsfw_e219_s14000.safetensors^
+@REM 	https://huggingface.co/litagin/style_bert_vits2_nsfw/resolve/main/model_assets/Liisa-nsfw/
+@REM if %errorlevel% neq 0 ( popd & exit /b %errorlevel% )
 
 popd rem %~dp0..\lib\Style-Bert-VITS2
 exit /b 0
